@@ -1,0 +1,197 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+  color: white;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #111;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+/* Title */
+header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #ff4c00;
+  margin-bottom: 5px;
+}
+
+/* Sub Title */
+header p {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: #ccc;
+}
+
+/* Tagline */
+.tagline {
+  font-size: clamp(0.95rem, 2vw, 1.2rem);
+  color: #ffae80;
+  font-style: italic;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation */
+nav {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover,
+nav a.home-link {
+  background-color: #ff4c00;
+  color: white;
+}
+
+/* Zone Container */
+.zone-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 15px;
+}
+
+/* Zone Boxes */
+.zone {
+  flex: 1 1 280px;
+  max-width: 400px;
+  background-color: #1a1a1a;
+  padding: 25px;
+  text-align: center;
+  border: 2px solid #ff4c00;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.zone h2 {
+  color: #ff4c00;
+  margin-bottom: 10px;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+
+.zone p {
+  color: #ccc;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+}
+
+.zone:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 76, 0, 0.6);
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 15px;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  color: #ccc;
+  border-top: 3px solid #ff4c00;
+  /* sirf yahi horizontal line bachi */
+}
+
+/* Mobile Friendly Adjustments */
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  .zone-container {
+    padding: 20px 10px;
+  }
+
+  .zone {
+    padding: 20px;
+  }
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.history-box {
+  background: linear-gradient(135deg, #3a3a3a, #1c1c1c);
+  color: #FFD700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 40px 20px;
+  text-align: center;
+  border: 2px solid #555;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.15);
+}
+
+/* Assign unique gradients to each box */
+.history-box:nth-child(1) {
+  background: linear-gradient(135deg, #8b0000, #2e2e2e);
+}
+
+/* Jammu - Dark Red */
+.history-box:nth-child(2) {
+  background: linear-gradient(135deg, #b8860b, #2e2e2e);
+}
+
+/* Rajasthan - Golden Brown */
+.history-box:nth-child(3) {
+  background: linear-gradient(135deg, #006400, #2e2e2e);
+}
+
+/* Punjab - Dark Green */
+.history-box:nth-child(4) {
+  background: linear-gradient(135deg, #4682b4, #2e2e2e);
+}
+
+/* Himachal - Steel Blue */
+.history-box:nth-child(5) {
+  background: linear-gradient(135deg, #ff8c00, #2e2e2e);
+}
+
+/* Uttarakhand - Dark Orange */
+.history-box:nth-child(6) {
+  background: linear-gradient(135deg, #9932cc, #2e2e2e);
+}
+
+/* Haryana - Purple */
+.history-box:nth-child(7) {
+  background: linear-gradient(135deg, #8b4513, #2e2e2e);
+}
+
+/* Uttar Pradesh - Saddle Brown */
+
+.history-box:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+  border-color: #FFD700;
+}
